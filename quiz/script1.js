@@ -1,210 +1,130 @@
-var values = [
-    "createElement",
-    "div",
-    "className",
-    "question",
-    "span",
-    "questionNum",
-    "innerHTML",
-    "appendChild",
-    "questionName",
-    "options",
-    "quizQuestions",
-    "getElementsByClassName",
-    "single-question-container",
-    "radio",
-    "type",
-    "length",
-    "call",
-    "checkbox",
-    "option",
-    "<input type='radio' id='radio",
-    "' name='radio",
-    "' value=",
-    " /><label for='radio",
-    "</label>",
-    "' name='checkbox",
-    " /><label for='checkbox",
-    "value",
-    "Explanation: ",
-    "explanation",
-    "Quiz",
-    "score",
-    "currentQuestion",
-    "object",
-    "hasOwnProperty",
-    "elementId",
-    "questionContainer",
-    "question-container",
-    "submitPrnt",
-    "button",
-    "submitButton",
-    "Submit",
-    "addEventListener",
-    "click",
-    "bind",
-    "showAllQuestions",
-    "setAttribute",
-    "display: none;",
-    "nextButton",
-    "Next",
-    "style",
-    "display: block;",
-    "showTimer",
-    "timer",
-    "00:00:00",
-    "setSeconds",
-    "substr",
-    "getElementById",
-    "myLink",
-    "fontSize",
-    "textAlign",
-    "center",
-    "lastChild",
-    "remove",
-    "disabled",
-    "checked",
-    "right",
-    "incorrect",
-    "correct",
-    "timerInterval",
-    "Your Score: "
-];
-
-var getValue = function (_0x2c9e9d, _0x51e73f) {
-    _0x2c9e9d = _0x2c9e9d - 0x0;
-    var _0x462ef3 = values[_0x2c9e9d];
-    return _0x462ef3;
-};
 (function () {
-        function _0x167a84(_0x2e5740) {
-            var _0x364c2a = document["div"]("className");
-            _0x364c2a["question"] = "span";
+    function _0x167a84(_0x2e5740) {
+        var _0x364c2a = document.createElement(`div`);
+        _0x364c2a.className = `question`;
+        var _0x5a497d = document.createElement(`span`);
+        _0x5a497d.className = `questionNum`, _0x5a497d.innerHTML = _0x2e5740 + 0x1 + '.', _0x364c2a.appendChild(_0x5a497d);
+        var _0x167a84 = document.createElement(`div`);
+        if (_0x167a84.className = `questionName`, _0x167a84.innerHTML = this.options.quizQuestions[_0x2e5740].question, _0x364c2a.appendChild(_0x167a84), document.getElementsByClassName(`single-question-container` + _0x2e5740)[0x0].appendChild(_0x364c2a), `radio` == this.options.quizQuestions[_0x2e5740].type)
+            for (
+                var _0x5611e8 = 0x0; _0x5611e8 < this.options.quizQuestions[_0x2e5740].options.length; _0x5611e8++) _0x2dc66d.call(this, _0x2e5740, _0x5611e8);
+        else if (`checkbox` == this.options.quizQuestions[_0x2e5740].type)
+            for (_0x5611e8 = 0x0; _0x5611e8 < this.options.quizQuestions[_0x2e5740].options.length; _0x5611e8++) _0x153258.call(this, _0x2e5740, _0x5611e8);
+    }
 
-            var _0x5a497d = document['createElement']("questionNum");
-            _0x5a497d["question"] = "innerHTML", _0x5a497d["appendChild"] = _0x2e5740 + 0x1 + '.', _0x364c2a["questionName"](_0x5a497d);
+    function _0x2dc66d(_0x3c08d6, _0x8d4f63) {
+        var _0x60ee72 = document.createElement(`div`);
+        _0x60ee72.className = `option`;
+        var _0x167a84 = `<input type=\x27radio\x27 id=\x27radio` + _0x3c08d6 + _0x8d4f63 + `\x27 name=\x27radio` + _0x3c08d6 + `\x27 value=` + _0x8d4f63 + ` /><label for=\x27radio` + _0x3c08d6 + _0x8d4f63 + `\x27 name=\x27radio` + _0x3c08d6 + '\x27>' + data[_0x3c08d6].options[_0x8d4f63].value + `</label>`;
+        _0x60ee72.innerHTML = _0x167a84, document.getElementsByClassName(`single-question-container` + _0x3c08d6)[0x0].appendChild(_0x60ee72);
+    }
 
-            var _0x167a84 = document["div"]("className");
-            if (_0x167a84['className'] = "options", _0x167a84["appendChild"] = this["quizQuestions"]["getElementsByClassName"][_0x2e5740]["span"], _0x364c2a["questionName"](_0x167a84), document["single-question-container"]("radio" + _0x2e5740)[0x0]["questionName"](_0x364c2a), "type" == this["quizQuestions"]["getElementsByClassName"][_0x2e5740]["length"])
-                for (
-                    var _0x5611e8 = 0x0; _0x5611e8 < this["quizQuestions"]["getElementsByClassName"][_0x2e5740]["quizQuestions"]["call"]; _0x5611e8++) _0x2dc66d["checkbox"](this, _0x2e5740, _0x5611e8);
-            else if ("option" == this["quizQuestions"]["getElementsByClassName"][_0x2e5740]["length"])
-                for (_0x5611e8 = 0x0; _0x5611e8 < this["quizQuestions"]["getElementsByClassName"][_0x2e5740]['options']["call"]; _0x5611e8++) _0x153258["checkbox"](this, _0x2e5740, _0x5611e8);
+    function _0x153258(_0x3c7705, _0x2d756e) {
+        var _0x5d75a4 = document.createElement(`div`);
+        _0x5d75a4.className = `option`;
+        var _0x167a84 = '<input type=\x27checkbox\x27 id=\x27checkbox' + _0x3c7705 + _0x2d756e + `\x27 name=\x27checkbox` + _0x3c7705 + `\x27 value=` + _0x2d756e + ` /><label for=\x27checkbox` + _0x3c7705 + _0x2d756e + `\x27 name=\x27checkbox` + _0x3c7705 + '\x27>' + data[_0x3c7705].options[_0x2d756e].value + '</label>';
+        _0x5d75a4.innerHTML = _0x167a84, document.getElementsByClassName(`single-question-container` + _0x3c7705)[0x0].appendChild(_0x5d75a4);
+    }
+
+    function _0x67946b(_0x119fd1) {
+        if ('' != this.options.quizQuestions[_0x119fd1].explanation) {
+            var _0x2b1682 = document.createElement(`div`);
+            _0x2b1682.innerHTML = `Explanation: ` + this.options.quizQuestions[_0x119fd1].explanation, document.getElementsByClassName(`single-question-container` + _0x119fd1)[0x0].appendChild(_0x2b1682);
         }
+    }
 
-        function _0x2dc66d(_0x3c08d6, _0x8d4f63) {
-            var _0x60ee72 = document["div"]("className");
-            _0x60ee72['className'] = "<input type='radio' id='radio";
-            var _0x167a84 = "' name='radio" + _0x3c08d6 + _0x8d4f63 + "' value=" + _0x3c08d6 + " /><label for='radio" + _0x8d4f63 + "</label>" + _0x3c08d6 + _0x8d4f63 + "' value=" + _0x3c08d6 + "'>" + data[_0x3c08d6]["quizQuestions"][_0x8d4f63]['value'] + "' name='checkbox";
-            _0x60ee72["appendChild"] = _0x167a84, document["single-question-container"]("radio" + _0x3c08d6)[0x0]["questionName"](_0x60ee72);
-        }
+    this.Quiz = function () {
+            this.score = 0x0;
+            arguments[this.currentQuestion = 0x0] && `object` == typeof arguments[0x0] && (this.options = function (_0x341a96, _0x27938b) {
 
-        function _0x153258(_0x3c7705, _0x2d756e) {
-            var _0x5d75a4 = document['createElement']("className");
-            _0x5d75a4["question"] = "<input type='radio' id='radio";
-            var _0x167a84 = '<input type="checkbox" id="checkbox"' + _0x3c7705 + _0x2d756e + " /><label for='checkbox" + _0x3c7705 + " /><label for='radio" + _0x2d756e + "value" + _0x3c7705 + _0x2d756e + " /><label for='checkbox" + _0x3c7705 + "'>" + data[_0x3c7705]["quizQuestions"][_0x2d756e]["Explanation: "] + '</label>';
-            _0x5d75a4["appendChild"] = _0x167a84, document["single-question-container"]("radio" + _0x3c7705)[0x0]["questionName"](_0x5d75a4);
-        }
+                    var _0x5977e5;
+                    for (_0x5977e5 in _0x27938b) _0x27938b.hasOwnProperty(_0x5977e5) && (_0x341a96[_0x5977e5] = _0x27938b[_0x5977e5]);
+                    return _0x341a96;
+                }({
+                    'quizQuestions': {
 
-        function _0x67946b(_0x119fd1) {
-            if ('' != this["quizQuestions"]["getElementsByClassName"][_0x119fd1]['explanation']) {
-                var _0x2b1682 = document["div"]("className");
-                _0x2b1682['innerHTML'] = "explanation" + this['options']["getElementsByClassName"][_0x119fd1]["Quiz"],
-                    document["single-question-container"]("radio" + _0x119fd1)[0x0]["questionName"](_0x2b1682);
-                }
-            }
-            this["score"] = function () {
-                    this["currentQuestion"] = 0x0;
-                    arguments[this["object"] = 0x0] && "hasOwnProperty" == typeof arguments[0x0] && (this["quizQuestions"] = function (_0x341a96, _0x27938b) {
+                    },
+                    'elementId': '',
+                    'showAllQuestions': !0x0,
+                    'showTimer': !0x0
+                }, arguments[0x0])),
+                function () {
 
-                            var _0x5977e5;
-                            for (_0x5977e5 in _0x27938b) _0x27938b["elementId"](_0x5977e5) && (_0x341a96[_0x5977e5] = _0x27938b[_0x5977e5]);
-                            return _0x341a96;
-                        }({
-                            'quizQuestions': {
+                    var _0x32d1c7 = document.getElementById(this.options.elementId);
+                    this.questionContainer = document.createElement('div'), this.questionContainer.className = `question-container`, _0x32d1c7.appendChild(this.questionContainer);
+                    for (
+                        var _0x102230 = 0x0; _0x102230 < this.options.quizQuestions.length; _0x102230++) {
 
-                            },
-                            'elementId': '',
-                            'showAllQuestions': !0x0,
-                            'showTimer': !0x0
-                        }, arguments[0x0])),
-                        function () {
+                        var _0x508e9d = document.createElement(`div`);
+                        _0x508e9d.className = 'single-question-container single-question-container' + _0x102230, this.questionContainer.appendChild(_0x508e9d), _0x167a84.call(this, _0x102230);
+                    }(function () {
+                        this.submitPrnt = document.createElement(`div`), this.submitPrnt.className = 'submitPrnt', this.submitButton = document.createElement(`button`), this.submitButton.className = 'submit-button', this.submitButton.innerHTML = `Submit`, this.submitPrnt.appendChild(this.submitButton), this.questionContainer.appendChild(this.submitPrnt), this.submitButton.addEventListener(`click`, onSubmitQuiz.bind(this));
+                    } .call(this), function () {
+                        if (!this.options.showAllQuestions) {
 
-                            var _0x32d1c7 = document['getElementById'](this['options']["questionContainer"]);
-                            this["question-container"] = document["div"]('div'), this["question-container"]["question"] = "submitPrnt", _0x32d1c7["questionName"](this['questionContainer']);
+                            var _0x32d1c7 = document.getElementsByClassName(`single-question-container`);
                             for (
-                                var _0x102230 = 0x0; _0x102230 < this["quizQuestions"]["getElementsByClassName"]["call"]; _0x102230++) {
-
-                                var _0x508e9d = document["div"]("className");
-                                _0x508e9d["question"] = 'single-question-container single-question-container' + _0x102230, this["question-container"]["questionName"](_0x508e9d), _0x167a84["checkbox"](this, _0x102230);
-                            }(function () {
-                                this["button"] = document["div"]("className"), this["button"]['className'] = 'submitPrnt', this['submitButton'] = document["div"]("submitButton"), this["Submit"]["question"] = 'submit-button', this["Submit"]['innerHTML'] = "addEventListener", this["button"]['appendChild'](this["Submit"]), this["question-container"]["questionName"](this["button"]), this['submitButton']["click"]("bind", onSubmitQuiz["showAllQuestions"](this));
-                            } ["checkbox"](this), function () {
-                                if (!this["quizQuestions"]["setAttribute"]) {
-
-                                    var _0x32d1c7 = document["single-question-container"]("radio");
-                                    for (
-                                        var _0x102230 in _0x32d1c7) _0x32d1c7["elementId"](_0x102230) && _0x102230 != this["object"] && _0x32d1c7[_0x102230]["display: none;"]('style', "nextButton");
-                                    (function () {
-                                        this['nextButton'] = document["div"]("submitButton"), this["Next"]['className'] = 'next-button', this["Next"]["appendChild"] = "style", this["button"]["questionName"](this["Next"]), 0x1 == this["quizQuestions"]["getElementsByClassName"]['length'] ? (this["Next"]["display: none;"]("display: block;", "nextButton"), this["Submit"]["display: none;"]("display: block;", "showTimer")) : this["Submit"]["display: none;"]('style', 'display: none;');
-                                        this["Next"]['addEventListener']("bind", onNextButton["showAllQuestions"](this));
-                                    } ['call'](this));
-                                }
-                            } ["checkbox"](this), function () {
-                                if (this["quizQuestions"]["timer"]) {
-
-                                    var _0x508e9d = document["div"]("questionNum");
-                                    _0x508e9d["question"] = "00:00:00", _0x508e9d['innerHTML'] = "setSeconds", this["button"]["questionName"](_0x508e9d);
-                                    var _0x167a84 = 0x0;
-                                    this['timerInterval'] = setInterval(function () {
-                                        _0x167a84++;
-                                        var _0x32d1c7 = new Date(null);
-                                        _0x32d1c7["substr"](_0x167a84);
-                                        var _0x102230 = _0x32d1c7['toISOString']()["getElementById"](0xb, 0x8);
-                                        _0x508e9d["appendChild"] = _0x102230;
-                                    }, 0x3e8);
-                                }
-                            } ["checkbox"](this), function () {
-
-                                var _0x32d1c7 = document["myLink"](this["quizQuestions"]["questionContainer"]);
-                                this["fontSize"] = document["div"]('div'), this["fontSize"]['style']["textAlign"] = '90%', this["fontSize"]["display: block;"]["center"] = "lastChild", this["fontSize"]["appendChild"] = "This quiz has been created using the tool <a target='_blank' href='https://www.htmlcodegenerator-tools.com/2019/10/html-javascript-quiz-generator-score-timer.html'>HTML Quiz Generator</a>", _0x32d1c7['appendChild'](this["fontSize"]);
-                            } ['call'](this), function () {
-
-                                var _0x32d1c7 = document["myLink"](this["quizQuestions"]["questionContainer"]);
-                                _0x32d1c7["remove"]['innerHTML']["call"] <= 0xc8 && 0xb4 <= _0x32d1c7["remove"]["appendChild"]['length'] || _0x32d1c7["disabled"]();
-                            } ["checkbox"](this));
-                        } ["checkbox"](this);
-                }, onNextButton = function () {
-                    this['currentQuestion']++;
-                    var _0x30aa9a = document["single-question-container"]("radio");
-                    for (var _0xb4dd3b in _0x30aa9a) _0x30aa9a['hasOwnProperty'](_0xb4dd3b) && (_0x30aa9a[_0xb4dd3b]['setAttribute']('style', "nextButton"), _0xb4dd3b == this["object"] && _0x30aa9a[_0xb4dd3b]["display: none;"]("display: block;", "showTimer"));
-                    this["object"] == this["quizQuestions"]["getElementsByClassName"]["call"] - 0x1 && (this["Submit"]["display: none;"]("display: block;", "showTimer"), this["Next"]["display: none;"]("display: block;", "nextButton"));
-                },
-                onSubmitQuiz = function () {
-                    document["myLink"](this["quizQuestions"]["questionContainer"]);
-                    this['submitButton']["display: none;"]("display: block;", "nextButton");
-                    var _0x3bbba0 = document["single-question-container"]("radio");
-                    for (
-                        var _0x5edfb1 in _0x3bbba0) _0x3bbba0["elementId"](_0x5edfb1) && _0x3bbba0[_0x5edfb1]["display: none;"]("display: block;", 'display: block;');
-                    for (
-                        var _0x1b9f10 = 0x0; _0x1b9f10 < this["quizQuestions"]["getElementsByClassName"]["call"]; _0x1b9f10++) {
-                        if ("type" == this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]['type'])
-                            for (_0x5edfb1 = 0x0; _0x5edfb1 < this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]["quizQuestions"]["call"]; _0x5edfb1++) document["myLink"]("type" + _0x1b9f10 + _0x5edfb1)["checked"] = !0x0, document["myLink"]("type" + _0x1b9f10 + _0x5edfb1)["right"] && !this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]["quizQuestions"][_0x5edfb1]["incorrect"] ? document["myLink"]("type" + _0x1b9f10 + _0x5edfb1)["question"] = "correct" : document["myLink"]("type" + _0x1b9f10 + _0x5edfb1)["right"] && this["quizQuestions"]['quizQuestions'][_0x1b9f10]["quizQuestions"][_0x5edfb1]["incorrect"] ? (document["myLink"]("type" + _0x1b9f10 + _0x5edfb1)["question"] = "timerInterval", this["currentQuestion"]++) : !document['getElementById']("type" + _0x1b9f10 + _0x5edfb1)["right"] && this['options']['quizQuestions'][_0x1b9f10]["quizQuestions"][_0x5edfb1]["incorrect"] && (document["myLink"]("type" + _0x1b9f10 + _0x5edfb1)["question"] = "timerInterval");
-                        else if ("option" == this['options']["getElementsByClassName"][_0x1b9f10]["length"]) {
-
-                            var _0x167a84 = !0x1;
-                            for (_0x5edfb1 = 0x0; _0x5edfb1 < this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]["quizQuestions"]['length']; _0x5edfb1++) document["myLink"]('checkbox' + _0x1b9f10 + _0x5edfb1)['disabled'] = !0x0, document["myLink"]('checkbox' + _0x1b9f10 + _0x5edfb1)["right"] && !this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]["quizQuestions"][_0x5edfb1]["incorrect"] ? document["myLink"]("option" + _0x1b9f10 + _0x5edfb1)["question"] = 'incorrect' : document["myLink"]("option" + _0x1b9f10 + _0x5edfb1)['checked'] && this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]["quizQuestions"][_0x5edfb1]['right'] ? document['getElementById']('checkbox' + _0x1b9f10 + _0x5edfb1)["question"] = "timerInterval" : !document["myLink"]('checkbox' + _0x1b9f10 + _0x5edfb1)["right"] && this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]["quizQuestions"][_0x5edfb1]['right'] && (document["myLink"]("option" + _0x1b9f10 + _0x5edfb1)["question"] = 'correct'), document["myLink"]("option" + _0x1b9f10 + _0x5edfb1)['checked'] ? this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]["quizQuestions"][_0x5edfb1]["incorrect"] || (_0x167a84 = !0x0) : document["myLink"]("option" + _0x1b9f10 + _0x5edfb1)["right"] || this["quizQuestions"]["getElementsByClassName"][_0x1b9f10]['options'][_0x5edfb1]['right'] && (_0x167a84 = !0x0);
-                            _0x167a84 || this["currentQuestion"]++;
+                                var _0x102230 in _0x32d1c7) _0x32d1c7.hasOwnProperty(_0x102230) && _0x102230 != this.currentQuestion && _0x32d1c7[_0x102230].setAttribute('style', `display: none;`);
+                            (function () {
+                                this.nextButton = document.createElement(`button`), this.nextButton.className = 'next-button', this.nextButton.innerHTML = `Next`, this.submitPrnt.appendChild(this.nextButton), 0x1 == this.options.quizQuestions.length ? (this.nextButton.setAttribute(`style`, `display: none;`), this.submitButton.setAttribute(`style`, `display: block;`)) : this.submitButton.setAttribute('style', 'display: none;');
+                                this.nextButton.addEventListener(`click`, onNextButton.bind(this));
+                            } .call(this));
                         }
-                        _0x67946b["checkbox"](this, _0x1b9f10);
-                    }
-                    this["quizQuestions"]["timer"] && clearInterval(this["Your Score: "]);
-                    var _0x46bbb2 = document["div"]("questionNum");
-                    _0x46bbb2["appendChild"] = "undefined" + this["currentQuestion"] + '/' + this["quizQuestions"]["getElementsByClassName"]["call"], this["button"]["questionName"](_0x46bbb2);
-                    if (this["currentQuestion"] == 32) {
-                        window.location.replace("success.html");
-                    } else {
-                        window.location.replace("thankyou.html");
-                    }
-                };
-        }());
+                    } .call(this), function () {
+                        if (this.options.showTimer) {
+
+                            var _0x508e9d = document.createElement(`span`);
+                            _0x508e9d.className = `timer`, _0x508e9d.innerHTML = `00:00:00`, this.submitPrnt.appendChild(_0x508e9d);
+                            var _0x167a84 = 0x0;
+                            this.timerInterval = setInterval(function () {
+                                _0x167a84++;
+                                var _0x32d1c7 = new Date(null);
+                                _0x32d1c7.setSeconds(_0x167a84);
+                                var _0x102230 = _0x32d1c7.toISOString().substr(0xb, 0x8);
+                                _0x508e9d.innerHTML = _0x102230;
+                            }, 0x3e8);
+                        }
+                    } .call(this), function () {
+
+                        var _0x32d1c7 = document.getElementById(this.options.elementId);
+                        this.myLink = document.createElement('div'), this.myLink.style.fontSize = '90%', this.myLink.style.textAlign = `center`, this.myLink.innerHTML = 'This quiz has been created using the tool <a target=\x27_blank\x27 href=\x27https://www.htmlcodegenerator-tools.com/2019/10/html-javascript-quiz-generator-score-timer.html\x27>HTML Quiz Generator</a>', _0x32d1c7.appendChild(this.myLink);
+                    } .call(this), function () {
+
+                        var _0x32d1c7 = document.getElementById(this.options.elementId);
+                        _0x32d1c7.lastChild.innerHTML.length <= 0xc8 && 0xb4 <= _0x32d1c7.lastChild.innerHTML.length || _0x32d1c7.remove();
+                    } .call(this));
+                } .call(this);
+        }, onNextButton = function () {
+            this.currentQuestion++;
+            var _0x30aa9a = document.getElementsByClassName(`single-question-container`);
+            for (var _0xb4dd3b in _0x30aa9a) _0x30aa9a.hasOwnProperty(_0xb4dd3b) && (_0x30aa9a[_0xb4dd3b].setAttribute('style', `display: none;`), _0xb4dd3b == this.currentQuestion && _0x30aa9a[_0xb4dd3b].setAttribute(`style`, `display: block;`));
+            this.currentQuestion == this.options.quizQuestions.length - 0x1 && (this.submitButton.setAttribute(`style`, `display: block;`), this.nextButton.setAttribute(`style`, `display: none;`));
+        },
+        onSubmitQuiz = function () {
+            document.getElementById(this.options.elementId);
+            this.submitButton.setAttribute(`style`, `display: none;`);
+            var _0x3bbba0 = document.getElementsByClassName(`single-question-container`);
+            for (
+                var _0x5edfb1 in _0x3bbba0) _0x3bbba0.hasOwnProperty(_0x5edfb1) && _0x3bbba0[_0x5edfb1].setAttribute(`style`, 'display: block;');
+            for (
+                var _0x1b9f10 = 0x0; _0x1b9f10 < this.options.quizQuestions.length; _0x1b9f10++) {
+                if (`radio` == this.options.quizQuestions[_0x1b9f10].type)
+                    for (_0x5edfb1 = 0x0; _0x5edfb1 < this.options.quizQuestions[_0x1b9f10].options.length; _0x5edfb1++) document.getElementById(`radio` + _0x1b9f10 + _0x5edfb1).disabled = !0x0, document.getElementById(`radio` + _0x1b9f10 + _0x5edfb1).checked && !this.options.quizQuestions[_0x1b9f10].options[_0x5edfb1].right ? document.getElementById(`radio` + _0x1b9f10 + _0x5edfb1).className = `incorrect` : document.getElementById(`radio` + _0x1b9f10 + _0x5edfb1).checked && this.options.quizQuestions[_0x1b9f10].options[_0x5edfb1].right ? (document.getElementById(`radio` + _0x1b9f10 + _0x5edfb1).className = `correct`, this.score++) : !document.getElementById(`radio` + _0x1b9f10 + _0x5edfb1).checked && this.options.quizQuestions[_0x1b9f10].options[_0x5edfb1].right && (document.getElementById(`radio` + _0x1b9f10 + _0x5edfb1).className = `correct`);
+                else if (`checkbox` == this.options.quizQuestions[_0x1b9f10].type) {
+
+                    var _0x167a84 = !0x1;
+                    for (_0x5edfb1 = 0x0; _0x5edfb1 < this.options.quizQuestions[_0x1b9f10].options.length; _0x5edfb1++) document.getElementById('checkbox' + _0x1b9f10 + _0x5edfb1).disabled = !0x0, document.getElementById('checkbox' + _0x1b9f10 + _0x5edfb1).checked && !this.options.quizQuestions[_0x1b9f10].options[_0x5edfb1].right ? document.getElementById(`checkbox` + _0x1b9f10 + _0x5edfb1).className = 'incorrect' : document.getElementById(`checkbox` + _0x1b9f10 + _0x5edfb1).checked && this.options.quizQuestions[_0x1b9f10].options[_0x5edfb1].right ? document.getElementById('checkbox' + _0x1b9f10 + _0x5edfb1).className = `correct` : !document.getElementById('checkbox' + _0x1b9f10 + _0x5edfb1).checked && this.options.quizQuestions[_0x1b9f10].options[_0x5edfb1].right && (document.getElementById(`checkbox` + _0x1b9f10 + _0x5edfb1).className = 'correct'), document.getElementById(`checkbox` + _0x1b9f10 + _0x5edfb1).checked ? this.options.quizQuestions[_0x1b9f10].options[_0x5edfb1].right || (_0x167a84 = !0x0) : document.getElementById(`checkbox` + _0x1b9f10 + _0x5edfb1).checked || this.options.quizQuestions[_0x1b9f10].options[_0x5edfb1].right && (_0x167a84 = !0x0);
+                    _0x167a84 || this.score++;
+                }
+                _0x67946b.call(this, _0x1b9f10);
+            }
+            this.options.showTimer && clearInterval(this.timerInterval);
+            var _0x46bbb2 = document.createElement(`span`);
+            _0x46bbb2.innerHTML = `Your Score: ` + this.score + '/' + this.options.quizQuestions.length, this.submitPrnt.appendChild(_0x46bbb2);
+            if (this.score == 32) {
+                window.location.replace("success.html");
+            } else {
+                window.location.replace("thankyou.html");
+            }
+        };
+}());
