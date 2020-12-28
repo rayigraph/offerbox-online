@@ -1,0 +1,61 @@
+.blank{
+    width: 100%;
+	padding: 50px 0;
+}
+.errorpage {
+    background:#fff;
+	border: 10px solid #000;
+	width:60%;
+}
+.errorpage p {
+    color:#f00;
+}
+.errorpage h3 {
+    color:#19af83;
+}
+.errorpage h2 {
+    color:#f00;
+}
+.row
+{
+    display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px
+}
+.thankyou{
+    width:90%;
+    text-align:center;
+    background-color:#f6f6f6;
+    border:5px double;
+    margin-top:20px;
+    margin-bottom:20px;
+    border-radius:5px;
+}
+.thankyou h1{
+    color:#FFA500;
+    border-bottom:double #000;
+}
+.thankyou h2{
+    color:#FFA500;
+    border-top:double #000;
+}
+.thankyou p{
+    color:#31362f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sorry{
+    font-weight:900;
+    font-size:30px;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+.whatsapp{
+    color:#6aa65c;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size:20px;
+}
+.offer{
+    color:#999966;
+    font-size:20px;
+}
+.box{
+    color:#af6a77;
+    font-size:20px;
+}
