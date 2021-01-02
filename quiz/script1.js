@@ -201,10 +201,13 @@
             this.options.showTimer && clearInterval(this.timerInterval);
             var _0x46bbb2 = document.createElement(`span`);
             _0x46bbb2.innerHTML = `Your Score: ` + this.score + '/' + this.options.quizQuestions.length, this.submitPrnt.appendChild(_0x46bbb2);
-            if (this.score == 32) {
-                window.location.replace("success.html");
-            } else {
-                window.location.replace("thankyou.html");
-            }
+
+            var formData = new FormData();
+            formData.append("score", this.score);
+
+            var oReq = new XMLHttpRequest();
+            oReq.onload = function () { console.log('done') }
+            oReq.open("post", "./submit.php");
+            oReq.send(formData);
         };
 }());

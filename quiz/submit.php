@@ -14,7 +14,12 @@ if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
 }
  
-echo "Connected successfully";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      $score = $POST['score'];
+      //here got score
+      exit();
+}
+
 $name=$_POST['name'];
 $phonenumber=$_POST['phonenumber'];
 $district=$_POST['district'];
